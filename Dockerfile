@@ -26,3 +26,6 @@ RUN composer install --no-dev --optimize-autoloader
 
 # Expose port 80
 EXPOSE 80
+
+# ✅ Start Apache when the container starts
+CMD ["apache2-foreground"]
